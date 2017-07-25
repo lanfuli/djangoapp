@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<h1>yes</h1>
-
+<br>
+<h1>{{title}} is working</h1>
+{% for x in query_list %}
+{{x.title}}</br>
+{{x.content}}</br>
+{{x.id}}</br>
+{{x.pk}}</br>
+{% endfor%}
 </body>
 </html>
