@@ -8,7 +8,7 @@ from .models import Post
 
 class PostModelAmdin(admin.ModelAdmin):
     list_display = ['__unicode__', 'update', 'timestamp']
-    list_display_links = ['update']
+    # list_display_links = ['update']
     list_filter = ['update', 'timestamp']
     search_fields = ['title', 'content']
 
